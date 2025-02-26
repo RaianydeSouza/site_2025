@@ -5,63 +5,54 @@
         <link rel="stylesheet" type="text/css" href=""></link>
         <meta charset="utf-8">
         <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                alert("funcionou");
+ 
+            });
+        </script>
         <style>
             .site{
-                width:1800px;
-                height:750px;
-                border:1px solid #4682B4;
-                padding:0px;
+                width:900px;
+                height:645px;
             }
             .header{
-                width:1800px;
-                height:50px;
-                border:1px solid #4682B4;
-                padding:0px;
+                width:inherit;
+                height:20px;
                 background: rgb(7,32,42);
                 background: radial-gradient(circle, rgba(7,32,42,1) 0%, rgba(9,9,121,1) 100%);
             }  
             .main{
-                width:1800px;
-                height:550px;
-                border:1px solid #4682B4;
-                padding:0px;
+                width:inherit;
+                height:560px;
             }
             .footer{
-                width:1800px;
+                width:inherit;
                 height:145px;
-                border:1px solid #4682B4;
-                padding:0px;
                 background-image:url("https://png.pngtree.com/thumb_back/fw800/background/20240929/pngtree-elegant-blue-flowers-in-a-serene-garden-setting-tranquil-with-flower-image_16273950.jpg");
             }
             .esquerda{
-                width:200px;
-                height:550px;
-                border:1px solid #4682B4;
+                width:50px;
+                height:560px;
                 display:inline-block;
                 float:right;
                 background-image:url("https://png.pngtree.com/thumb_back/fw800/background/20240929/pngtree-elegant-blue-flowers-in-a-serene-garden-setting-tranquil-with-flower-image_16273950.jpg");
             }
             .centro{
-                width:1400px;
-                height:550px;
-                border:1px solid #4682B4;
+                width:800px;
+                height:560px;
                 display:inline-block;
                 float:right;
+                background-color:#4682B4;
             }
             .direita{
-                width:194px;
-                height:550px;
-                border:1px solid #4682B4;
+                width:50px;
+                height:560px;
                 display:inline-block;
                 float:right;
                 background-image:url("https://png.pngtree.com/thumb_back/fw800/background/20240929/pngtree-elegant-blue-flowers-in-a-serene-garden-setting-tranquil-with-flower-image_16273950.jpg");
             }
         </style>
-        <script>
-            let nome = "dory";
-            alert(nome);
-
-        </script>
     </head>
         <body>
             <div class="site">
@@ -80,31 +71,25 @@
                                 <button id="btn_tres">3</button>
                                 <button id="btn_adicao">+</button>
                                 <button id="btn_porcentagem">%</button>
-                              </br></br>
-                              </br></br>
+                                </br></br>
                                 <button id="btn_quatro">4</button>
                                 <button id="btn_cinco">5</button>
                                 <button id="btn_seis">6</button>
                                 <button id="btn_subtracao">-</button>
                                 <button id="btn_potencia">^</button>
-                              </br></br>
-                              </br></br>
+                                </br></br>
                                 <button id="btn_sete">7</button>
                                 <button id="btn_oito">8</button>
                                 <button id="btn_nove">9</button>
                                 <button id="btn_divisao">/</button>
                                 <button id="btn_pa">(</button>
-                             </br></br>
-                             </br></br>
+                                </br></br>
                                 <button id="btn_ponto">.</button>
                                 <button id="btn_zero">0</button>
                                 <button id="btn_virgula">,</button>
                                 <button id="btn_multiplicacao">×</button>
                                 <button id="btn_pf">)</button>
-                            </br></br>
-
-
-                            </br></br>
+                                </br></br>
                                 <button id="btn_limpar">C</button>
                                 <button id="btn_igual">=</button>
                         </fieldset>
