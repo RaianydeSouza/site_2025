@@ -4,18 +4,19 @@
 // javascript é case sensitive (diferencia letras maiusculas de letras minusculas)
 
 // variaveis servem para armazenar informações.
-// elas são organizadas em string, int, boolean, etc.
+// elas são organizadas em string (letras), int, boolean, etc.
 // comando que cria variaveis é o let, porém é possivel também usar o "const".
 // para mostrar alguma coisa na tela, é usado o código "console.log();"
 
-// "=" significa atribuição.
+// "=" significa atribuição de valor.
 
 // variaveis do tipo string
 let idade ="dezessete anos";
 let complemento = " de idade";
 console.log(idade+complemento);
 
-// variaveis do tipo inteiro
+// variaveis do tipo inteiro.  
+// segunda linha "+=" significa que está sendo somado com 10.
 let altura = 164;
 altura += 10;
 console.log(altura);
@@ -34,14 +35,15 @@ else{
    console.log("o numero1 é diferente de 10");
 }
 
-// Questão1 -> Sabe-se que as pessoas abaixo de 16 anos não podem votar, as pessoas com idade entre 16 e 18 possuem voto facultativo, as pessoas com idade entre 18 e 70 anos possuem voto obrigatório e as pessoas com idade acima de 70 anos também possuem voto facultativo. Faça um código que diga através da idade, a condição de voto dela.
+// Questão1 -> Sabe-se que as pessoas abaixo de 16 anos não podem votar, as pessoas com idade entre 16 e 18 anos possuem voto facultativo, as pessoas com idade entre 18 e 70 anos possuem voto obrigatório e as pessoas com idade acima de 70 anos também possuem voto facultativo. Faça um código que diga através da idade, a condição de voto dela.
 
 // código "&&" significa "e".
 // código "||" significa "ou".
+// "<16" menor que 16
 
 let idadex = 67;
 
-if(idadex < 16){
+if(idadex < 16){          
    console.log("Eleitor não pode votar");
 }
 else if(idadex >= 18 && idadex <= 70){
@@ -53,4 +55,69 @@ else if(idadex >= 16 && idadex < 18 || idadex >70){
 
 // Quatão2 -> Ganhar na mega sena é o sonho de todo brasileiro. Diariamente milhares de pessoas apostam sonhando com a chance de mudar de vida. Faça um código que verifique os números apostados e os números sorteados e diga se o apostador ganhou na quadra, quina ou sena.
 
-let 
+// eclarando as variaveis dos números sorteados
+let numerosorteado1 = 41;
+let numerosorteado2 = 17;
+let numerosorteado3 = 24;
+let numerosorteado4 = 15;
+let numerosorteado5 = 40;
+let numerosorteado6 = 39;
+
+// declarando as variaveis dos números apostados
+let numeroapostado1 = 15;
+let numeroapostado2 = 17;
+let numeroapostado3 = 39;
+let numeroapostado4 = 41;
+let numeroapostado5 = 24;
+let numeroapostado6 = 40;
+
+// fazendo as comparações.
+// veificação da dezena sorteada.
+let dezena1;
+let dezena2;
+let dezena3;
+let dezena4;
+let dezena5;
+let dezena6;
+
+// verificando o número apostado1
+if (numeroapostado1 == numerosorteado1 || numeroapostado1 == numerosorteado2 || numeroapostado1 == numerosorteado3 || numeroapostado1 == numerosorteado4 || numeroapostado1 == numerosorteado5 || numeroapostado1 == numerosorteado6){
+
+    dezena1 = 0;
+    console.log(dezena1);
+}
+
+// verificando o número apostado2
+if(numeroapostado2 == numerosorteado1 || numeroapostado2 == numerosorteado2 || numeroapostado2 == numerosorteado3 || numeroapostado2 == numerosorteado4 || numeroapostado2 == numerosorteado5 || numeroapostado2 == numerosorteado6){
+    
+     dezena2 = 0;
+    console.log(dezena2);
+}
+
+// verificando o número apostado3
+if(numeroapostado3 == numerosorteado1 || numeroapostado3 == numerosorteado2 || numeroapostado3 == numerosorteado3 || numeroapostado3 == numerosorteado4 || numeroapostado3 == numerosorteado5 || numeroapostado3 == numerosorteado6){
+    
+     dezena3 = 0;
+    console.log(dezena3);
+}
+
+// verificando o número apostado4
+if(numeroapostado4 == numerosorteado1 || numeroapostado4 == numerosorteado2 || numeroapostado4 == numerosorteado3 || numeroapostado4 == numerosorteado4 || numeroapostado4 == numerosorteado5 || numeroapostado4 == numerosorteado6){
+    
+     dezena4 = 0;
+    console.log(dezena4);
+}
+
+// verificando o número apostado5
+if(numeroapostado5 == numerosorteado1 || numeroapostado5 == numerosorteado2 || numeroapostado5 == numerosorteado3 || numeroapostado5 == numerosorteado4 || numeroapostado5 == numerosorteado5 || numeroapostado5 == numerosorteado6){
+    
+     dezena5 = 0;
+    console.log(dezena5);
+}
+
+// verificando o número apostado6
+if(numeroapostado6 == numerosorteado1 || numeroapostado6 == numerosorteado2 || numeroapostado6 == numerosorteado3 || numeroapostado6 == numerosorteado4 || numeroapostado6 == numerosorteado5 || numeroapostado6 == numerosorteado6){
+    
+     dezena6 = 0;
+    console.log(dezena6);
+}
