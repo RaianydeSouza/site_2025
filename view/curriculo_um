@@ -23,7 +23,7 @@
         <p>Empresa:<input type="text" name="empresa" required></p></br>
         <p>Data de Admissão:<input type="date" name="data_admissao" required></p></br>
         <p>Data de Demissão:<input type="date" name="data_demissao" required></p></br>
-        <p>Atividade Exercida:<input type="text" name="ativi_exercida" required></p></br>
+        <p>Atividade Exercida:<input type="text" name="atividade_exercida" required></p></br>
         <hr>
         <h4>Cursos e Idiomas</h4>
         <p>Descrição:<input type="text" name="descricao" required></p></br>
